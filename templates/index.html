@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Emotion Recognition AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='AI icon.png') }}"" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="headertxt">FACIAL EMOTION RECOGNITION AI</h1>
+    </header>
+
+    <main>
+        <section>
+            <img class="wall-e" src="{{ url_for('video_feed') }}" alt="">
+        </section>
+        
+        <!-- boksen under bildet -->
+
+        <section class="txtbox txtbox1">
+            <h1 class="overskrift-txt"> Hva Ulrik har lært ved egen prosjektet: </h1>
+                <ul class="Dotlist">
+                    <li>Jeg har lært mere ved bruk av HTML og CSS og bygging opp av nettsider.</li>
+                    <li>Jeg har lært hva de forskjellige type AI gjør blant annet i hverger.</li>
+                    <li>Har forstått hva og hvordan AI påvirker både hverdags liv og livet over internett.</li>
+                    <li>har fått dypere læring i hva og hvordan en AI fungere å hvordan man kan lage en simpel og lett AI.</li>
+                    <li>Jeg har lært hvordan man kan sette opp ubunt altså linux OS, og da har jeg prøvd å hjulpet fogad med å få AI config filen til å funke.</li>
+                    <li>Gjorde litt research i helga å fant ut at Adobe pakken som hadde nylig i helga på lørdag 27/05/2023 fått seg et AI tool som hjelper med å gjøre photo manipulering lettere.</li>
+                </ul>
+        </section>
+
+        <section class="txtbox txtbox2">
+            <h1 class="overskrift-txt"> Hva Fogad har lært ved egen prosjektet: </h1>
+                <ul class="Dotlist">
+                    <li>Jeg har lært hvordan man finner et datasett og hvordan man filtrerer og fikser dataen. Jeg har også lært hvordan man feilsøker en modell som ikke fungerer, samt hvordan man eksporterer den til ulike filformater. Dessuten har jeg lært hvordan man bruker en modell i virkeligheten i stedet for i et dedikert miljø. Til slutt har jeg lært hvordan man skriver den samme koden på ulike måter og i forskjellige programmeringsspråk.</li>
+                </ul>
+        </section>
+
+        <section class="txtbox txtbox3">
+            <h1 class="overskrift-txt"> Dette er hva vi har gjort med vårt prosjekt: </h1>
+            <ul class="Dotlist">
+                <li>vi har laget en ai, som fungerer i en gui. den bruker kammeraet til å finne ansiktet til en person(får nå er det max 1 person), som den tar å kiler ut. bilde blir så bearbeidet(data typen på bilde blir endret og størelsen blir endret til 128x128) og sent in til modellen, den tar bilde og gjør beregninger basert på bilde,bilde blir sent gjennom forskjellige lag i modelen, hvor den finner kjennetegn i bilde(som et smill eller et overasket ansikt) i vært lag   og, den tar også å komprimere bilde til 64x2x2. etter det blir bilde flatet ut til en tensor som innholder 256 tall. det tallene innholder viktig info, som blir ganget med en matrise som er 1x256, og den gir ut 7 numer som er hvor siker den er å at en vis følse er riktig. jeg tok følsen den var mest siker på og viste det i gui-en. modelen kjenner igjen bare 7 følser anger, contempt, disgust, fear, happy, neutral, sad og surprise</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        Fogad og Ulrik Copyright ©
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* outline: green dashed 3px; */
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 65px;
+}
+
+.headertxt {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline black;
+}
+
+.wall-e {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+}
+
+li {
+  margin: 15px 0px;
+}
+
+.Dotlist {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-left: 45px;
+}
+
+.overskrift-txt {
+  margin-left: 15px;
+  text-decoration: underline white;
+  color: white;
+}
+.txtbox {
+  padding: 20px 0;
+  width: 100%;
+}
+.txtbox1 {
+  margin-top: 150px;
+  background-color: black;
+}
+.txtbox2 {
+  background-color: red;
+}
+.txtbox3 {
+  background-color: orange;
+}
+
+footer {
+  font-weight: bold;
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+}
